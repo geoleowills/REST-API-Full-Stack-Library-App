@@ -53,6 +53,8 @@ const UserSignUp = () => {
                     }
                 })
                 .catch(() => history.push("/error"));
+        } else {
+            setErrors(["Passwords do not match."]);
         }
     };
 
